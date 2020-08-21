@@ -79,7 +79,8 @@ def tenta_chaves():
         tam_lista=len(outros_carac)
         for k in texto_retorno:
             while contador_lista < tam_lista and contador_carac==outros_carac[contador_lista][0]:
-                parcial+=outros_carac[contador_lista][1]
+                if outros_carac[contador_lista][1]!="\n":
+                    parcial+=outros_carac[contador_lista][1]
                 contador_lista+=1
                 contador_carac+=1
             parcial+=k
