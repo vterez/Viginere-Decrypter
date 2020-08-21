@@ -89,6 +89,5 @@ def tenta_chaves():
         print("Texto",n)
         print("Chave =",i[0])
         print(i[1])
-        #pass
     return possiveis
 tenta_chaves()
